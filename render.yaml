@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: passport-playground-issuer
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: free

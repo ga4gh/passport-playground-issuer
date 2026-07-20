@@ -28,9 +28,14 @@ as-is on either platform below — no other config files needed.
 
 ### Render
 
+[render.yaml](render.yaml) is a Blueprint spec, so Render picks up name/runtime/plan automatically:
+
 1. Push this repo to GitHub.
-2. In the Render dashboard: **New > Web Service**, connect the repo.
-3. Set environment to **Docker** (Render auto-detects the `Dockerfile`) and click **Create Web Service**.
+2. In the Render dashboard: **New > Blueprint**, connect the repo — Render reads `render.yaml` and
+   creates the web service from the `Dockerfile`.
+
+(Connecting via **New > Web Service** instead also works and auto-detects the `Dockerfile`, but
+won't read `render.yaml`.)
 
 ### Fly.io
 
