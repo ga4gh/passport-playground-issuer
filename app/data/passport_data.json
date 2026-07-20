@@ -1,0 +1,59 @@
+{
+  "datasets": [
+    {
+      "alias": 1,
+      "name": "Example HMB Dataset",
+      "dacId": 1,
+      "createDate": "2024-01-15T10:00:00Z",
+      "dataUse": {
+        "generalUse": false,
+        "hmbResearch": true,
+        "diseaseRestrictions": ["MONDO:0004975"],
+        "populationOriginsAncestry": false,
+        "geneticStudiesOnly": false,
+        "methodsResearch": true,
+        "nonProfitUse": true,
+        "publicationResults": true,
+        "collaboratorRequired": false,
+        "ethicsApprovalRequired": true,
+        "geographicalRestrictions": "",
+        "publicationMoratorium": ""
+      }
+    },
+    {
+      "alias": 2,
+      "name": "Example General Research Use Dataset",
+      "dacId": null,
+      "createDate": "2024-03-01T09:30:00Z",
+      "dataUse": {
+        "generalUse": true,
+        "hmbResearch": false,
+        "diseaseRestrictions": [],
+        "populationOriginsAncestry": false,
+        "geneticStudiesOnly": false,
+        "methodsResearch": false,
+        "nonProfitUse": false,
+        "publicationResults": false,
+        "collaboratorRequired": false,
+        "ethicsApprovalRequired": false,
+        "geographicalRestrictions": "",
+        "publicationMoratorium": ""
+      }
+    }
+  ],
+  "dacs": [
+    {
+      "dacId": 1,
+      "name": "Example DAC",
+      "createDate": "2023-05-01T09:00:00Z",
+      "associatedDaaId": 1
+    }
+  ],
+  "daas": [
+    {
+      "daaId": 1,
+      "name": "Example Data Access Agreement",
+      "createDate": "2023-06-01T09:00:00Z"
+    }
+  ]
+}
