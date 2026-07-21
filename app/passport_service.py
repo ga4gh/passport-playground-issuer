@@ -27,6 +27,10 @@ def load_data():
         return json.load(f)
 
 
+def format_identifier(alias):
+    return f"{IDENTIFIER_PREFIX}{alias:06d}"
+
+
 def parse_identifier_to_alias(dataset_identifier):
     if not dataset_identifier.startswith(IDENTIFIER_PREFIX):
         raise BadRequestError(f"Invalid dataset identifier: {dataset_identifier}")
